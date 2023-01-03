@@ -1,0 +1,249 @@
+/* Navigation Bar (Up) CSS Declarations */
+.navbar {
+	align-items: center;
+	background-color: #379c6f;
+	display: flex;
+	border: 10px solid #379c6f;
+	box-sizing: border-box;
+	font-size: 0.875rem;
+	padding: 0.5rem 0;
+	white-space: nowrap;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 64px;
+	font-weight: 500;
+	padding-left: 2rem; 
+	padding-right: 2rem;
+}
+
+.navbar-item-link {
+	border-radius: 0.375rem;
+	border-width: 0;
+	box-sizing: border-box;
+	color: #dfe7eb;
+	font-size: 1em;
+	padding: 0.875rem 0.75rem;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.navbar-item-current {
+	background-color: #2a7754;
+	border-radius: 0.375rem;
+	border-width: 0;
+	box-sizing: border-box;
+	color: #dfe7eb;
+	font-size: 1em;
+	padding: 0.875rem 0.75rem;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.navbar-item-link:hover, .navbar-item-link:focus, .navbar-item-link:active, .navbar-item-current:hover, .navbar-item-current:focus, .navbar-item-current:active {
+	background-color: #236447;
+	color: #e5e7eb;
+	text-decoration: none;
+}
+
+
+
+/* Body and HTML CSS Declarations*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background: #1d1d1d;
+	color: #ffffff;
+}
+
+#main {
+	padding: 20px;
+}
+
+.p-text {
+	font-size: 16px;
+	color: #D1D5DB
+}
+
+.a-link {
+	color: #379c6f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #5bc595;
+}
+
+
+
+/* Picture Style CSS Declarations */
+.left-floating-image {
+	float: left;
+	margin: 0px 10px
+}
+
+.picture-organizer tbody tr th {
+	text-align: left;
+	font-weight: normal;
+}
+
+.picture-border {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+}
+
+.center-picture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 10px
+}
+
+
+
+/* Header Style CSS Declarations */
+.docu-formatter h1 {
+	font-size: 36px;
+}
+
+.docu-formatter h2 {
+	font-size: 24px;
+}
+
+.docu-formatter h3 {
+	font-size: 21.6px;
+}
+
+.docu-formatter h4 {
+	font-size: 16px;
+}
+
+
+
+/* Sidebar CSS Declarations */
+.sidenav {
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #171717;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 312px;
+	margin-top: 64px;
+	padding: 20px 8px;
+	scrollbar-color: #48b269 #5bc595;
+}
+
+.sidenav a {
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.sidenav-links {
+	padding: 1.25rem 0.5rem;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+.sidenav-nested-links {
+	font-weight: bold;
+	list-style-type: none;
+}
+
+.sidenav-item-active {
+    border-left-color: #379c6f;
+    border-left-width: 0.25rem;
+	color: #379c6f;
+}
+
+
+
+
+
+/* Sidebar Item Style CSS Declarations */
+.sidenav-item-h2:hover, .sidenav-item-h3:hover, .sidenav-item-h4:hover, .sidenav-item-active:hover {
+	border-left: 0.25rem solid #3eaf7c;
+	color: #3eaf7c; 
+}
+
+.sidenav-item-h1 {
+	border-radius: 0.125rem 0 0 0.125rem;
+	font-weight: 700;
+	font-size: 1em;
+	border-left-width: 0;
+	text-transform: uppercase;
+	padding: 0.35rem 1.5rem 0.35rem 1.25rem;
+	color: #D1D5DB;
+	margin: 0px 
+}
+
+.sidenav-item-h2, .sidenav-item-h3, .sidenav-item-h4 {
+	border-left: 0.25rem solid transparent;
+	border-radius: 0.125rem 0 0 0.125rem;
+	font-weight: 400;
+	color: #D1D5DB;
+}
+
+.sidenav-item-h2 {
+	font-size: 14px;
+	padding: 0.35rem 1rem 0.35rem 2rem;
+}
+
+.sidenav-item-h3 {
+	font-size: 13.3px;
+	padding: 0.25rem 1rem 0.25rem 1.75rem;
+}
+
+.sidenav-item-h4 {
+	font-size: 12.635px;
+	padding: 0.15rem 1rem 0.15rem 1.50rem;
+}
+
+.sidenav-item-h1 p, .sidenav-item-h2 a, .sidenav-item-h3 a, .sidenav-item-h4 a {
+	font-family: system-ui;
+	color: #D1D5DB;
+	margin: 0px 
+}
+
+
+
+
+
+/* Custom Boxes */
+.custom-boxes {
+	overflow-wrap: break-word;
+    border-radius: 0.375rem;
+	display: block;
+	padding: 0.1rem 1.5rem;
+    border-left-width: 0.5rem;
+    border-left-style: solid;
+    margin: 1rem 0;
+}
+
+.custom-boxes .custom-boxes-title {
+	font-weight: 600;
+    margin-bottom: -0.4rem;
+}
+
+.custom-boxes.tip {
+    border-color: #42b983;
+    background-color: rgba(66, 185, 131, .25);
+    color: #a0ddc1;
+}
+
+.custom-boxes.tip .custom-boxes-title {
+    color: #66c99c;
+}
