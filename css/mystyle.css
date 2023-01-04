@@ -250,21 +250,51 @@ body {
 
 /* Sprites */
 .spritesheet {
-	background-image: url("../images/github_sprite.png");
+	background-image: url("../images/spritesheet.png");
 	background-repeat: no-repeat;
 	display: block;
 	width: 90px;
 	height: 180px;
 }
 
+
+
 .github:link, .github:visited {
-	background: url("../images/github_sprite.png") no-repeat 0px 0px;
-	width: 90px;
-	height: 90px;
+	background-position: -368px -14px;
+	width: 27px;
+	height: 28px;
 }
 
 .github:hover, .github:active {
-	background: url("../images/github_sprite.png") no-repeat 0px -90px;
-	width: 90px;
-	height: 90px;
+	background-position: -368px -79px;
+	width: 27px;
+	height: 28px;
+}
+
+
+
+.facebook:link, .facebook:visited {
+	background-position: -169px -15px;
+	width: 28px;
+	height: 27px;
+}
+
+.facebook:hover, .facebook:active {
+	background-position: -169px -79px;
+	width: 28px;
+	height: 28px;
+}
+
+
+
+.twitter:link, .twitter:visited {
+	background-position: -268px -14px;
+	width: 28px;
+	height: 28px;
+}
+
+.twitter:hover, .twitter:active {
+	background-position: -268px -79px;
+	width: 28px;
+	height: 28px;
 }
