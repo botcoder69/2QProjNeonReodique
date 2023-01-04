@@ -247,3 +247,24 @@ body {
 .custom-boxes.tip .custom-boxes-title {
     color: #66c99c;
 }
+
+/* Sprites */
+.spritesheet {
+	background-image: url("../images/github_sprite.png");
+	background-repeat: no-repeat;
+	display: block;
+	width: 90px;
+	height: 180px;
+}
+
+.github:link, .github:visited {
+	background: url("../images/github_sprite.png") no-repeat 0px 0px;
+	width: 90px;
+	height: 90px;
+}
+
+.github:hover, .github:active {
+	background: url("../images/github_sprite.png") no-repeat 0px -90px;
+	width: 90px;
+	height: 90px;
+}
