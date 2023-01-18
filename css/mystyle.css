@@ -298,3 +298,11 @@ body {
 	width: 28px;
 	height: 28px;
 }
+
+.disappear {
+	transition: 2.5s;
+}
+
+.disappear:hover {
+	opacity: 0;
+}
